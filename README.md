@@ -11,6 +11,7 @@
 - [InfoTipIcon 文字与图标对齐技术说明](docs/InfoTipIcon_Alignment_Wiki.md)
 - [图标基线对齐与 translateY 微调原理说明](docs/Icon_Baseline_and_translateY.md)
 - [图标与文字的基线对齐：从视觉误差到完美修正](docs/Icon_Baseline_Perfect_Alignment.md)
+- [全局Scrollbar 样式与策略 Wiki](docs/global-scrollbar-strategy.md)
 
 ### ⚙️ 性能与工程化
 - （待补充）Webpack 打包优化
