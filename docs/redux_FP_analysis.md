@@ -8,11 +8,11 @@ Redux 往往被描述为“函数式编程（FP）风格的状态管理库”。
 * “middleware 是个链”
 * “combineReducers 组合一下”
 
-这些解释太浅，不足以让一个做过科研或读过论文的人真正“懂”。
+这些解释太浅，不足以让一个做过科研或读过论文的人真正“觉得清楚”。
 因此，这篇文章提供两种视角：
 
 1. **工程版 FP 解释（工程师能看懂并能落地）**
-2. **数学结构版 FP 解释（博士 / CTO 也认可）**
+2. **数学结构版 FP 解释（博士 / CTO 比较熟悉）**
 
 ---
 
@@ -176,24 +176,8 @@ FP 特征：
 
 ### 3.1 状态空间与转移函数（State Transition System）
 
-定义：
+![img_1.png](img_1.png)
 
-* 状态空间：
-  ( S )
-* 动作集合：
-  ( A )
-* 初始状态：
-  ( s_0 \in S )
-* reducer（状态转移函数）：
-  ( r: S \times A \to S )
-
-一次 dispatch 的数学形式：
-
-[
-s_{t+1} = r(s_t, a_{t+1})
-]
-
-多次 dispatch = **左折叠（foldl）**
 
 ```js
 actions.reduce((s, a) => reducer(s, a), initialState)
@@ -201,10 +185,7 @@ actions.reduce((s, a) => reducer(s, a), initialState)
 
 也可以视为函数组合：
 
-* 每个 action 对应一个映射函数
-  ( f_a(s) = r(s, a) )
-* action 序列形成组合：
-  ( f_{a_n} \circ f_{a_{n-1}} \circ \dots \circ f_{a_1} )
+![img_2.png](img_2.png)
 
 这就是 Redux time-travel debug 的数学原理。
 
@@ -217,8 +198,7 @@ actions.reduce((s, a) => reducer(s, a), initialState)
 
 因此：
 
-* 整个应用行为是一个可重现的数学链：
-  ( S \times A^* \to S )
+![img_3.png](img_3.png)
 
 这保证：
 
@@ -231,25 +211,7 @@ actions.reduce((s, a) => reducer(s, a), initialState)
 
 ### 3.3 combineReducers 的笛卡尔积结构
 
-假设全局状态由多个子状态组成：
-
-[
-S = S_1 \times S_2 \times S_3 \times \dots \times S_k
-]
-
-每个 slice reducer：
-
-[
-r_i: S_i \times A \to S_i
-]
-
-combine 后的 rootReducer：
-
-[
-R((s_1, \dots, s_k), a) = (r_1(s_1, a), \dots, r_k(s_k, a))
-]
-
-范畴论里，这就是按分量（component-wise）的映射。
+![img.png](img.png)
 
 工程里，就是 `combineReducers`.
 
