@@ -213,7 +213,7 @@ actions.reduce((s, a) => reducer(s, a), initialState)
 
 ![img.png](img.png)
 
-工程里，就是 `combineReducers`.
+
 
 ---
 
