@@ -33,6 +33,12 @@
 - [图标与文字的基线对齐：从视觉误差到完美修正](docs/Icon_Baseline_Perfect_Alignment.md)
 - [全局 Scrollbar 样式与策略 Wiki](docs/global-scrollbar-strategy.md)
 
+### 🔁 A Complete Guide to useEffect 读书笔记
+
+- [Chapter 1：useEffect 的本质与心智模型（Snapshot & Synchronization）](A%20Complete%20Guide%20to%20useEffect/chapter_1.md)
+- [Chapter 2：从 useEffect 提炼的工程实践规则](A%20Complete%20Guide%20to%20useEffect/chapter_2.md)
+- [Chapter 3：useEffect 的典型业务场景与必须使用的情况](A%20Complete%20Guide%20to%20useEffect/chapter_3.md)
+
 ### ⚙️ 性能与工程化
 - （待补充）Webpack 打包优化
 - （待补充）懒加载与路由分片策略
