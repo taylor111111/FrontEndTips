@@ -39,6 +39,20 @@
 - [Chapter 2：从 useEffect 提炼的工程实践规则](A%20Complete%20Guide%20to%20useEffect/chapter_2.md)
 - [Chapter 3：useEffect 的典型业务场景与必须使用的情况](A%20Complete%20Guide%20to%20useEffect/chapter_3.md)
 
+---
+
+### 🧱 AMD & CMD → 模块化开发 → 懒加载 → 工程问题
+
+> 从 **模块依赖图（Graph）** 出发，系统性讲清  
+> **模块如何划分、如何避免循环依赖、懒加载如何设计、工程问题如何兜底**。
+
+- [Chapter 1：从 AMD / CMD 看“模块化”的本质](modular-architecture/chapter_1.md)
+- [Chapter 2：懒加载带来的工程问题与处理方式](modular-architecture/chapter_2.md)
+- [Chapter 3：懒加载的四条“硬标准”](modular-architecture/chapter_3.md)
+- [Chapter 4：分层结构与依赖图设计（domain / ui / infra / features / app）](modular-architecture/chapter_4.md)
+- [Chapter 5：模块依赖图 → 懒加载子图 → UX 状态机 → Chunk 结构](modular-architecture/chapter_5.md)
+- [Chapter 6：一张结构图，回答模块拆分 / 循环依赖 / 懒加载设计](modular-architecture/chapter_6.md)
+
 ### ⚙️ 性能与工程化
 - （待补充）Webpack 打包优化
 - （待补充）懒加载与路由分片策略
