@@ -53,6 +53,18 @@
 - [Chapter 5：模块依赖图 → 懒加载子图 → UX 状态机 → Chunk 结构](modular-architecture/chapter_5.md)
 - [Chapter 6：一张结构图，回答模块拆分 / 循环依赖 / 懒加载设计](modular-architecture/chapter_6.md)
 
+### 🧨 React API 边界与工程责任（react_api）
+
+> 系统性分析 React 中**最容易被滥用、但风险权重最高**的一组 API，
+> 从**设计目的、适用场景、禁止边界**三个层面，明确工程责任与长期后果。
+
+- [Chapter 1：useMemo / useCallback —— identity 与依赖边界](react_api/chapter_1.md)
+- [Chapter 2：useRef —— 命令式逃生口的边界](react_api/chapter_2.md)
+- [Chapter 3：Context —— 环境注入 vs 隐式全局状态](react_api/chapter_3.md)
+- [Chapter 4：React.memo —— 组件边界上的性能工具](react_api/chapter_4.md)
+- [Chapter 5：forwardRef / useImperativeHandle —— 受控地暴露命令式能力](react_api/chapter_5.md)
+- [Chapter 6：Error Boundary —— 事故隔离装置，而不是稳定性工具](react_api/chapter_6.md)
+
 ### ⚙️ 性能与工程化
 - （待补充）Webpack 打包优化
 - （待补充）懒加载与路由分片策略
