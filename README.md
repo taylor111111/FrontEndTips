@@ -34,7 +34,8 @@
 - [全局 Scrollbar 样式与策略 Wiki](docs/global-scrollbar-strategy.md)
 
 ### 🔁 A Complete Guide to useEffect 读书笔记
-
+> useEffect 不是生命周期 API，而是“将某一次渲染（snapshot）的结果，同步到 React 之外世界”的机制。
+- [📘 总览 / Index：A Complete Guide to useEffect](A%20Complete%20Guide%20to%20useEffect/README.md)
 - [Chapter 1：useEffect 的本质与心智模型（Snapshot & Synchronization）](A%20Complete%20Guide%20to%20useEffect/chapter_1.md)
 - [Chapter 2：从 useEffect 提炼的工程实践规则](A%20Complete%20Guide%20to%20useEffect/chapter_2.md)
 - [Chapter 3：useEffect 的典型业务场景与必须使用的情况](A%20Complete%20Guide%20to%20useEffect/chapter_3.md)
