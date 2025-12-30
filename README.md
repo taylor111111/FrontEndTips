@@ -66,6 +66,33 @@
 - [Chapter 5：forwardRef / useImperativeHandle —— 受控地暴露命令式能力](react_api/chapter_5.md)
 - [Chapter 6：Error Boundary —— 事故隔离装置，而不是稳定性工具](react_api/chapter_6.md)
 
+### monorepo 工程决策 & 技术调研
+
+> 这一部分不是“是否采用 Monorepo”的工程结论，而是一组**工程结构、工具边界与依赖管理的技术调研笔记**。  
+> 重点在于：**每种工具解决了什么问题、边界在哪里、为何不能混为一谈**。
+
+- [CRA + Yarn Workspace：从单仓库到工程可控性](monorepo/docs/dependency-management/CRA_Monorepo_Workspace.md)
+- [为什么不把业务模块发布成 npm 包](monorepo/docs/dependency-management/not_npm.md)
+- [为什么 npm 不适合承载业务模块](monorepo/docs/dependency-management/not_npm_why.md)
+- [为什么不只是 components：domain / widget 的工程边界](monorepo/docs/dependency-management/not_only_components.md)
+- [Domain vs Widget：金融业务中的分层决策](monorepo/docs/dependency-management/domain.md)
+- [Widgets 设计规范（金融向）](monorepo/docs/dependency-management/widgets.md)
+- [工程中尚未解决但值得记录的问题（TODO）](monorepo/docs/dependency-management/todo.md)
+
+#### 🔧 工具与依赖管理研究（dependency‑management）
+
+> 聚焦 **workspace / monorepo / 依赖树 / 构建调度** 等底层问题，  
+> 不讨论“哪个好”，而讨论“各自解决了什么、代价是什么”。
+
+- [Workspace 的设计目的与抽象模型](monorepo/docs/dependency-management/workspace.md)
+- [Yarn vs pnpm：workspace 与 node_modules 的差异](monorepo/docs/dependency-management/yarn_vs_pnpm.md)
+- [npm / yarn / pnpm：各自解决了什么问题](monorepo/docs/dependency-management/npm-vs-yarn-vs-pnpm-what-problem-does-each-solve.md)
+- [pnpm 的依赖管理抽象模型](monorepo/docs/dependency-management/pnpm.md)
+- [Turbo 在 Monorepo 中真正做了什么](monorepo/docs/dependency-management/turbo.md)
+- [Turbo vs 官方 turborepo 示例：工程迁移视角 vs 平台化方案](monorepo/docs/dependency-management/Turbo_vs_turborepo_example.md)
+- [Monorepo 中各类工具的职责边界总览](monorepo/docs/dependency-management/monorepo-tooling-boundaries.md)
+
+
 ### ⚙️ 性能与工程化
 - （待补充）Webpack 打包优化
 - （待补充）懒加载与路由分片策略
